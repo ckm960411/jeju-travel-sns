@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;700&family=Satisfy&display=swap');
+$inner_maxWidth: 1024px;
+
+body {
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: $inner_maxWidth;
+  width: 70%;
+  height: 100%;
+  margin: auto;
+}

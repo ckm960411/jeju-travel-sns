@@ -1,0 +1,48 @@
+$navbar_height: 60px;
+$navbar_menu_width: 24px;
+$navbar_menu_height: 24px;
+$navbar_menu_icon_size: 22px;
+
+#Navbar {
+  position: relative;
+  width: 100%;
+  height: $navbar_height;
+  font-family: 'Baloo Bhaijaan 2', cursive;
+  border-bottom: 1px solid #e7fcd5;
+  
+  .navbar__logo {
+    font-size: 32px;
+    font-weight: 700;
+    color: #8bd34c;
+    display: flex;
+    align-items: center;
+    img {
+      width: 120px;
+    }
+  }
+
+  .navbar__icons {
+    display: flex;
+    align-items: center;
+    .navbar__icon {
+      width: 26px;
+      height: 26px;
+      margin-right: 20px;
+      color: #353535;
+      cursor: pointer;
+    }
+
+    .profileLink {
+      display: flex;
+      align-items: center;
+      .profileImg {
+        width: 26px;
+        height: 26px;
+        background-color: #f9f9f9;
+        border: 2px solid #353535;
+        border-radius: 50%;
+      }
+    }
+  }
+
+}
