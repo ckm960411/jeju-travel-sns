@@ -1,3 +1,6 @@
+import Feed from "components/Feed"
+import Main from "components/Main"
+import SideBar from "components/SideBar"
 import subImg from "imgs/돌하르방.png"
 import mainImgJeju from "imgs/제주도2.png"
 import "styles/Home.scss"
@@ -22,19 +25,24 @@ function Home() {
         </div>
       </section>
         
-        <section className="categoryBar">
+        <section className="home__categoryBar">
           <div className="inner categoryBar__inner">
             <ul className="categoryList">
-              <li className="categoryList__item"><button className="categoryList__btn">맛집</button></li>
-              <li className="categoryList__item"><button className="categoryList__btn">카페</button></li>
-              <li className="categoryList__item"><button className="categoryList__btn">명소</button></li>
-              <li className="categoryList__item"><button className="categoryList__btn">숙박</button></li>
-              <li className="categoryList__item"><button className="categoryList__btn">액티비티</button></li>
+              <li className="categoryList__item"><button className="categoryList__btn">#맛집</button></li>
+              <li className="categoryList__item"><button className="categoryList__btn">#카페</button></li>
+              <li className="categoryList__item"><button className="categoryList__btn">#명소</button></li>
+              <li className="categoryList__item"><button className="categoryList__btn">#숙박</button></li>
+              <li className="categoryList__item"><button className="categoryList__btn">#액티비티</button></li>
             </ul>
           </div>
-          
         </section>
-        
+
+        <div className="home__containers">
+          <div className="inner homeContainer__inner">
+            <SideBar />
+            <Main />
+          </div>
+        </div>
 
     </div>
   )

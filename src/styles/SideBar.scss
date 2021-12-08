@@ -1,0 +1,60 @@
+@font-face {
+  font-family: 'Katuri';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_13@1.0/Katuri.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#SideBar {
+  width: 200px;
+  min-height: 500px;
+  background-color: #fcfcfc;
+  padding: 8px;
+  margin-right: 10px;
+  border-radius: 10px;
+  font-family: "Katuri", sans-serif;
+}
+
+.sideBar__profile {
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+  .sideBar__profileImg {
+    width: 40px;
+    border: 1px solid #f5f5f5;
+    border-radius: 50%;
+    background-color: #fff;
+  }
+  .sideBar__profile-desc {
+    margin-left: 10px;
+    .sideBar__profile-userName {
+      font-size: 16px;
+      color: #4c7727;
+      margin-bottom: 4px;
+    }
+    .sideBar__profile-userLevel {
+      font-size: 14px;
+      color: #353535;
+    }
+  }
+}
+
+.sideBar__categories {
+  font-size: 16px;
+  .sideBar__category {
+    padding: 20px;
+    padding-left: 30px;
+    color: #353535;
+    cursor: pointer;
+    transition: all .1s;
+    border-radius: 20px 0 0 20px;
+    &:hover {
+      background-color: #8bd34c;
+    }
+    .sideBar-icon {
+      margin-right: 10px;
+    }
+  }
+}

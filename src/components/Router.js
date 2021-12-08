@@ -9,8 +9,7 @@ function AppRouter() {
     <>
       <BrowserRouter>
         <Navigation />
-
-
+        
           <Routes>
             <Route path="/login" element={<Login />} />
             <Route path="/profile" element={<Profile />} />
