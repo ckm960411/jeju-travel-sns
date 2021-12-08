@@ -1,8 +1,8 @@
 import "styles/SideBar.scss";
-import anonymous from "imgs/anonymous.png";
+import anonymous from "imgs/profileImg.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faCommentDots } from "@fortawesome/free-regular-svg-icons"
 import {
+  faCog,
   faCommentDots,
   faHighlighter,
   faMapMarkedAlt,
@@ -18,6 +18,7 @@ function SideBar() {
           <h6 className="sideBar__profile-userName">꿩돈부장</h6>
           <span className="sideBar__profile-userLevel">제주 토박이</span>
         </div>
+        <button><FontAwesomeIcon icon={faCog} className="sideBar__profileIcon" /></button>
       </div>
 
       <ul className="sideBar__categories">

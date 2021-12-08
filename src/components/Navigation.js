@@ -1,5 +1,5 @@
 import "styles/Navigation.scss";
-import anonymous from "imgs/anonymous.png";
+import anonymous from "imgs/profileImg.png";
 import modrak from "imgs/modrak.png"
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

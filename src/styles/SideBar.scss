@@ -6,10 +6,11 @@
 }
 
 #SideBar {
-  width: 200px;
-  min-height: 500px;
-  background-color: #fcfcfc;
+  width: 300px;
+  height: 500px;
+  background-color: #fff;
   padding: 8px;
+  padding-right: 0;
   margin-right: 10px;
   border-radius: 10px;
   font-family: "Katuri", sans-serif;
@@ -28,9 +29,10 @@
     background-color: #fff;
   }
   .sideBar__profile-desc {
+    flex: 1;
     margin-left: 10px;
     .sideBar__profile-userName {
-      font-size: 16px;
+      font-size: 18px;
       color: #4c7727;
       margin-bottom: 4px;
     }
@@ -39,10 +41,17 @@
       color: #353535;
     }
   }
+  button {
+    padding-right: 8px;
+    .sideBar__profileIcon {
+      font-size: 20px;
+      color: #353535;
+    }
+  }
 }
 
 .sideBar__categories {
-  font-size: 16px;
+  font-size: 18px;
   .sideBar__category {
     padding: 20px;
     padding-left: 30px;

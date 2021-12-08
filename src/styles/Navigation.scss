@@ -5,6 +5,7 @@ $navbar_menu_icon_size: 22px;
 
 #Navbar {
   position: fixed;
+  z-index: 10;
   width: 100%;
   height: $navbar_height;
   font-family: 'Baloo Bhaijaan 2', cursive;

@@ -1,9 +1,11 @@
 import "styles/Main.scss"
+import Feed from "./Feed"
 
 function Main() {
   return (
     <section id="Main">
-      Main
+      <Feed />
+      <Feed />
     </section>
   )
 }
