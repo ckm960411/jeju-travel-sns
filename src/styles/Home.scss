@@ -1,7 +1,7 @@
-@import "styles/_variables.scss";
+@import "styles/_mixin";
 
 .home__banner {
-  padding-top: 120px;
+  padding-top: 12rem;
   background-color: $light-skyBlue-color;
   display: flex;
   flex-direction: column;
@@ -11,37 +11,36 @@
     flex-direction: column;
 
     .home__topImg {
-      width: 160px;
+      width: 16rem;
       margin: auto;
-      margin-bottom: 20px;  
+      margin-bottom: 2rem;  
     }
     .banner {
       display: flex;
       flex-direction: row;
-      margin: 30px 0 80px;
+      margin: 2rem 0 6rem;
     
       .banner-content {
         font-family: $main-font;
         width: 50%;
         .banner-content-title {
-          font-size: 2.75rem;
-          margin-bottom: 1rem;
+          font-size: 4.4rem;
+          margin-bottom: 1.6rem;
         }
         .banner-content-span {
           color: $main-color;
         }
         .banner-content-description {
-          font-size: 1.5rem;
-          margin-bottom: .25rem;
+          font-size: 2.4rem;
+          margin-bottom: 0.4rem;
           color: $hareubang-gray;
         }
       }
     
       .home__mainImg-wrapper {
-        width: 50%;
+        width: 51.2rem;
         .home__mainImg {
           width: 100%;
-          // height: 100%;
         }
       }
     }
@@ -52,8 +51,8 @@
   position: relative;
   background: $light-white-color1;
   align-items: center;
-  padding: 20px;
-  box-shadow: 0 0 15px rgb(0 0 0 / 15%);
+  padding: 1.6rem 0;
+  box-shadow: 0 0 1.5rem rgb(0 0 0 / 15%);
 
   .categoryList {
     list-style: none;
@@ -62,17 +61,17 @@
     justify-content: center;
 
     .categoryList__item {
-      margin-right: 30px;
+      margin-right: 3rem;
     }
     .categoryList__btn {
       background-color: $main-color;
-      width: 90px;
-      height: 40px;
-      border-radius: 20px;
+      width: 9rem;
+      height: 4rem;
+      border-radius: 2rem;
       font-family: 'Katuri';
       color: #353535;
-      font-size: 16px;
-      box-shadow: 0 0 15px rgb(0 0 0 / 15%);
+      font-size: 1.6rem;
+      box-shadow: 0 0 1.5rem rgb(0 0 0 / 15%);
       transition: all .2s;
       &:hover {
         transform: scale(1.1);
@@ -84,9 +83,21 @@
 
 .home__containers {
   background-color: $light-white-color2;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   .homeContainer__inner {
     display: flex;
   }
+}
+
+@include desktop {
+  
+}
+
+@include tablet {
+  
+}
+
+@include mobile {
+  
 }

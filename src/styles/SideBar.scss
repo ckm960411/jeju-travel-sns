@@ -1,64 +1,64 @@
-@import "styles/_variables.scss";
+@import "styles/_mixin";
 
 #SideBar {
-  width: 300px;
-  height: 500px;
+  width: 30rem;
+  height: 50rem;
   background-color: $white-color;
-  padding: 8px;
+  padding: .8rem;
   padding-right: 0;
-  margin-right: 10px;
-  border-radius: 10px;
-  font-family: "Katuri", sans-serif;
+  margin-right: 1rem;
+  border-radius: 1rem;
+  font-family: $main-font;
 }
 
 .sideBar__profile {
-  margin: 5px;
+  margin: .5rem;
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 
   .sideBar__profileImg {
-    width: 40px;
+    width: 4rem;
     border: 2px solid $hareubang-gray;
     border-radius: 50%;
     background-color: $white-color;
   }
   .sideBar__profile-desc {
     flex: 1;
-    margin-left: 10px;
+    margin-left: 1rem;
     .sideBar__profile-userName {
-      font-size: 18px;
+      font-size: 1.8rem;
       color: $deep-green-color;
-      margin-bottom: 4px;
+      margin-bottom: .4rem;
     }
     .sideBar__profile-userLevel {
-      font-size: 14px;
+      font-size: 1.4rem;
       color: $hareubang-gray;
     }
   }
   button {
-    padding-right: 8px;
+    padding-right: .8rem;
     .sideBar__profileIcon {
-      font-size: 20px;
+      font-size: 2rem;
       color: $hareubang-gray;
     }
   }
 }
 
 .sideBar__categories {
-  font-size: 18px;
+  font-size: 1.8rem;
   .sideBar__category {
-    padding: 20px;
-    padding-left: 30px;
+    padding: 2rem;
+    padding-left: 3rem;
     color: $hareubang-gray;
     cursor: pointer;
     transition: all .1s;
-    border-radius: 20px 0 0 20px;
+    border-radius: 2rem 0 0 2rem;
     &:hover {
       background-color: $main-color;
     }
     .sideBar-icon {
-      margin-right: 10px;
+      margin-right: 1rem;
     }
   }
 }

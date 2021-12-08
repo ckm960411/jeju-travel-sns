@@ -1,4 +1,4 @@
-@import "styles/_variables.scss";
+@import "styles/_mixin";
 
 #Navbar {
   position: fixed;
@@ -15,13 +15,10 @@
     justify-content: space-between;
   }
   .navbar__logo {
-    font-size: 32px;
-    font-weight: 700;
-    color: $main-color;
     display: flex;
     align-items: center;
     img {
-      width: 120px;
+      width: 12rem;
     }
   }
 
@@ -32,14 +29,15 @@
       border: none;
       border-bottom: 1px solid $hareubang-gray;
       outline: none;
-      width: 300px;
-      height: 30px;
-      padding-left: 8px;
+      width: 30rem;
+      height: 3rem;
+      font-size: 1.4rem;
+      padding-left: .8rem;
     }
     .navbar__searchBtn {
-      width: 30px;
-      height: 30px;
-      font-size: 18px;
+      width: 3rem;
+      height: 3rem;
+      font-size: 1.8rem;
       color: $hareubang-gray;
       border: none;
       outline: none;
@@ -51,9 +49,9 @@
     display: flex;
     align-items: center;
     .navbar__icon {
-      width: 26px;
-      height: 26px;
-      margin-right: 20px;
+      width: 2.6rem;
+      height: 2.6rem;
+      margin-right: 2rem;
       color: $hareubang-gray;
       cursor: pointer;
     }
@@ -62,8 +60,8 @@
       display: flex;
       align-items: center;
       .profileImg {
-        width: 26px;
-        height: 26px;
+        width: 2.6rem;
+        height: 2.6rem;
         background-color: $light-white-color1;
         border: 2px solid $hareubang-gray;
         border-radius: 50%;

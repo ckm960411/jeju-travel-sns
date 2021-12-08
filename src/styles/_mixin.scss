@@ -1,0 +1,25 @@
+@import "styles/_variables.scss";
+
+@mixin desktop {
+  @media (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop) {
+    html {
+      font-size: 8px;
+    }
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: $breakpoint-mobile) and (max-width: $breakpoint-tablet) {
+    html {
+      font-size: 7.4px;
+    }
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: $breakpoint-mobile) {
+    @content;
+  }
+}
