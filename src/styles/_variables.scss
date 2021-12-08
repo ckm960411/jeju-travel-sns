@@ -1,0 +1,51 @@
+/* main font */
+@font-face {
+  font-family: 'Katuri';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_13@1.0/Katuri.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+/* font: Noto Sans 400, 700 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+/* font: Baloo Bhaijaan2 */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;700&family=Satisfy&display=swap');
+
+/* size */
+$inner-width: 1024px;
+
+$navbar_height: 60px;
+$navbar_menu_width: 24px;
+$navbar_menu_height: 24px;
+$navbar_menu_icon_size: 22px;
+
+/* color */
+$main-color: #8bd34c;
+$deep-green-color: #4c7727;
+$light-green-color: #8ce241;
+$black-color: #000;
+$hareubang-gray: #353535;
+$light-skyBlue-color: #f0f8ff;
+$white-color: #fff;
+$light-white-color1: #f9f9f9;
+$light-white-color2: #f1f1f1;
+
+/* font */
+$main-font: 'Katuri';
+$sub-font1: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+::selection {
+  background-color: #8bd34c;
+  color: #fff;
+}
+button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}

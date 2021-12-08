@@ -1,7 +1,4 @@
-$navbar_height: 60px;
-$navbar_menu_width: 24px;
-$navbar_menu_height: 24px;
-$navbar_menu_icon_size: 22px;
+@import "styles/_variables.scss";
 
 #Navbar {
   position: fixed;
@@ -10,7 +7,7 @@ $navbar_menu_icon_size: 22px;
   height: $navbar_height;
   font-family: 'Baloo Bhaijaan 2', cursive;
   border-bottom: 1px solid #e7fcd5;
-  background-color: #fff;
+  background-color: $white-color;
   
   .navbar__inner {
     display: flex;
@@ -20,7 +17,7 @@ $navbar_menu_icon_size: 22px;
   .navbar__logo {
     font-size: 32px;
     font-weight: 700;
-    color: #8bd34c;
+    color: $main-color;
     display: flex;
     align-items: center;
     img {
@@ -33,7 +30,7 @@ $navbar_menu_icon_size: 22px;
     align-items: center;
     .navbar__inputForm {
       border: none;
-      border-bottom: 1px solid #353535;
+      border-bottom: 1px solid $hareubang-gray;
       outline: none;
       width: 300px;
       height: 30px;
@@ -43,7 +40,7 @@ $navbar_menu_icon_size: 22px;
       width: 30px;
       height: 30px;
       font-size: 18px;
-      color: #353535;
+      color: $hareubang-gray;
       border: none;
       outline: none;
       background: transparent;
@@ -57,7 +54,7 @@ $navbar_menu_icon_size: 22px;
       width: 26px;
       height: 26px;
       margin-right: 20px;
-      color: #353535;
+      color: $hareubang-gray;
       cursor: pointer;
     }
 
@@ -67,8 +64,8 @@ $navbar_menu_icon_size: 22px;
       .profileImg {
         width: 26px;
         height: 26px;
-        background-color: #f9f9f9;
-        border: 2px solid #353535;
+        background-color: $light-white-color1;
+        border: 2px solid $hareubang-gray;
         border-radius: 50%;
       }
     }

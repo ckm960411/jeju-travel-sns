@@ -1,13 +1,8 @@
-@font-face {
-  font-family: 'Katuri';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_13@1.0/Katuri.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
+@import "styles/_variables.scss";
 
 .home__banner {
   padding-top: 120px;
-  background-color: #f0f8ff;
+  background-color: $light-skyBlue-color;
   display: flex;
   flex-direction: column;
 
@@ -26,19 +21,19 @@
       margin: 30px 0 80px;
     
       .banner-content {
-        font-family: 'Katuri';
+        font-family: $main-font;
         width: 50%;
         .banner-content-title {
           font-size: 2.75rem;
           margin-bottom: 1rem;
         }
         .banner-content-span {
-          color: #8bd34c;
+          color: $main-color;
         }
         .banner-content-description {
           font-size: 1.5rem;
           margin-bottom: .25rem;
-          color: rgb(75, 75, 75);
+          color: $hareubang-gray;
         }
       }
     
@@ -55,7 +50,7 @@
 
 .home__categoryBar {
   position: relative;
-  background: #f9f9f9;
+  background: $light-white-color1;
   align-items: center;
   padding: 20px;
   box-shadow: 0 0 15px rgb(0 0 0 / 15%);
@@ -70,7 +65,7 @@
       margin-right: 30px;
     }
     .categoryList__btn {
-      background-color: #8bd34c;
+      background-color: $main-color;
       width: 90px;
       height: 40px;
       border-radius: 20px;
@@ -81,14 +76,14 @@
       transition: all .2s;
       &:hover {
         transform: scale(1.1);
-        background-color: #8ce241;
+        background-color: $light-green-color;
       }
     }
   }
 }
 
 .home__containers {
-  background-color: #f1f1f1;
+  background-color: $light-white-color2;
   padding-top: 20px;
   padding-bottom: 20px;
   .homeContainer__inner {

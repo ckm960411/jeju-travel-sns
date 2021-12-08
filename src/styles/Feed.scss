@@ -1,14 +1,8 @@
-@font-face {
-  font-family: 'Katuri';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_13@1.0/Katuri.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+@import "styles/_variables.scss";
 
 .main__feed {
   width: 100%;
-  background-color: #fff;
+  background-color: $white-color;
   border-radius: 10px;
   margin-bottom: 20px;
 
@@ -19,23 +13,23 @@
     .feed__header-profileImg {
       width: 40px;
       height: 40px;
-      border: 2px solid #353535;
+      border: 2px solid $hareubang-gray;
       border-radius: 50%;
       background-color: #f9f9f9;
     }
     .feed__header-profileDesc {
       flex: 1;
-      font-family: 'Katuri';
+      font-family: $main-font;
       margin-left: 14px;
-      color: #353535;
+      color: $hareubang-gray;
       h6 {
         font-size: 18px;
-        color: #4c7727;
+        color: $deep-green-color;
         margin-bottom: 4px;
       }
       span {
         font-size: 14px;
-        color: #353535;
+        color: $hareubang-gray;
       }
     }
     .feed__header-moreBtn {
@@ -45,19 +39,19 @@
   }
 
   .feed__contents {
-    background-color: aliceblue;
+    background-color: $white-color;
     width: 100%;
     min-height: 200px;
     .content-image {
       width: 100%;
       max-height: 500px;
-      background-color: #fff;
+      background-color: $white-color;
     }
   }
 
   .feed__post {
     padding: 16px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:$sub-font1;
     font-weight: 400;
     .post-icons {
       display: flex;
@@ -67,7 +61,7 @@
       .post-icon {
         font-size: 24px;
         &:hover {
-          color: #8bd34c;
+          color: $main-color;
         }
       }
       .post-padding {
@@ -83,6 +77,23 @@
     .post-text {
       margin-bottom: 8px;
       font-size: 14px;
+      .post-categories {
+        display: flex;
+        align-items: center;
+        .post-categoryBtn {
+          background-color: $main-color;
+          padding: 8px 10px;
+          margin-top: 6px;
+          border-radius: 16px;
+          font-family: 'Katuri';
+          box-shadow: 0 0 15px rgb(0 0 0 / 15%);
+          transition: all .2s;
+          &:hover {
+            transform: scale(1.1);
+            background-color: $light-green-color;
+          }
+        }
+      }
     }
     .post-comments {
       margin-bottom: 8px;
@@ -94,7 +105,7 @@
     }
     .post-timeAgo {
       font-size: 12px;
-      color: #353535;
+      color: $hareubang-gray;
     }
   }
 
@@ -120,10 +131,10 @@
       .addComment-subBtn {
         padding: 4px;
         font-weight: 600;
-        color: #8bd34c;
+        color: $main-color;
         transition: all .15s;
         &:hover {
-          color: #4c7727;
+          color: $deep-green-color;
         }
       }
     }
