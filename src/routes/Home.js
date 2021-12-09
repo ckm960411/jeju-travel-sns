@@ -1,4 +1,3 @@
-import Feed from "components/Feed"
 import Main from "components/Main"
 import SideBar from "components/SideBar"
 import subImg from "imgs/돌하르방.png"
@@ -37,12 +36,12 @@ function Home() {
           </div>
         </section>
 
-        <div className="home__containers">
+        <section className="home__containers">
           <div className="inner homeContainer__inner">
             <SideBar />
             <Main />
           </div>
-        </div>
+        </section>
 
     </div>
   )

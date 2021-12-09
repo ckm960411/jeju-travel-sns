@@ -1,3 +1,17 @@
+@import "styles/_mixin";
+
 #Main {
   flex: 1;
+}
+
+@include desktop {
+  
+}
+
+@include tablet {
+
+}
+
+@include mobile {
+  
 }

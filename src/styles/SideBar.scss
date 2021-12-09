@@ -52,7 +52,7 @@
     padding-left: 3rem;
     color: $hareubang-gray;
     cursor: pointer;
-    transition: all .1s;
+    transition: all .2s;
     border-radius: 2rem 0 0 2rem;
     &:hover {
       background-color: $main-color;
@@ -61,4 +61,40 @@
       margin-right: 1rem;
     }
   }
+}
+
+.sideBar__toggleBtn {
+  display: none;
+  background-color: $white-color;
+  position: absolute;
+  top: 10px;
+  right: -26px;
+  text-align: center;
+  padding: 12px 8px;
+  border-radius: 0 6px 6px 0;
+  transition: all .3s;
+  .toggleIcon {
+    font-size: 20px;
+  }
+}
+
+
+
+@include desktop {
+  
+}
+@include tablet {
+  #SideBar {
+    position: fixed;
+    top: $navbar_height;
+    left: 0rem;
+    z-index: 1;
+    transition: all .3s;
+  }
+  .sideBar__toggleBtn {
+    display: block;
+  }
+}
+@include mobile {
+
 }
