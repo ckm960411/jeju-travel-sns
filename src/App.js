@@ -4,7 +4,7 @@ import { useState } from "react";
 import Login from "routes/Login";
 
 function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(true) // 기본값 false!!
+  const [isLoggedIn, setIsLoggedIn] = useState(false) // 기본값 false!!
 
   return (
     <>
