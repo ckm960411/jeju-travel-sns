@@ -4,7 +4,7 @@
   position: fixed;
   z-index: 10;
   width: 100%;
-  height: $navbar_height;
+  padding: 1.5rem 0;
   font-family: 'Baloo Bhaijaan 2', cursive;
   border-bottom: 1px solid #e7fcd5;
   background-color: $white-color;
@@ -23,7 +23,6 @@
   }
 
   .navbar__searchForm {
-    // display: flex;
     align-items: center;
     .navbar__inputForm {
       position: relative;

@@ -4,8 +4,9 @@
   position: relative;
 }
 
+/* Home Banner */
 .home__banner {
-  padding-top: 12rem;
+  padding: 12rem 0 6rem;
   background-color: $light-skyBlue-color;
   display: flex;
   flex-direction: column;
@@ -16,13 +17,12 @@
 
     .home__topImg {
       width: 16rem;
-      margin: auto;
-      margin-bottom: 2rem;  
+      margin: 0 auto 2rem;
     }
     .banner {
       display: flex;
       flex-direction: row;
-      margin: 2rem 0 6rem;
+      margin: 2rem 0 0;
     
       .banner-content {
         font-family: $main-font;
@@ -30,11 +30,11 @@
         .banner-content-title {
           font-size: 4.4rem;
           margin-bottom: 1.6rem;
+          span {
+            color: $main-color;
+          }
         }
-        .banner-content-span {
-          color: $main-color;
-        }
-        .banner-content-description {
+        p {
           font-size: 2.4rem;
           margin-bottom: 0.4rem;
           color: $hareubang-gray;
@@ -52,12 +52,12 @@
       }
     }
   }
-}
+} 
 
+/* Home Category Bar */
 .home__categoryBar {
   position: relative;
   background: $light-white-color1;
-  align-items: center;
   padding: 1.6rem 0;
   box-shadow: 0 0 1.5rem rgb(0 0 0 / 15%);
 
@@ -69,12 +69,11 @@
     gap: 3rem;
     .categoryList__btn {
       background-color: $main-color;
-      width: 9rem;
-      height: 4rem;
       border-radius: 2rem;
       font-family: 'Katuri';
       color: #353535;
       font-size: 1.6rem;
+      padding: 1.2rem 1.8rem;
       box-shadow: 0 0 1.5rem rgb(0 0 0 / 15%);
       transition: all .2s;
       &:hover {
@@ -85,6 +84,7 @@
   }
 }
 
+/* Home Sidebar and Main Container */
 .home__containers {
   background-color: $light-white-color2;
   padding-top: 2rem;
@@ -95,11 +95,7 @@
   }
 }
 
-
-@include desktop {
-
-}
-
+/* Media Query */
 @include tablet {
   .home__banner {
     .banner__inner {
@@ -107,8 +103,11 @@
         .banner-content {
           width: 80%;
           margin: auto;
-          .banner-content-title,.banner-content-description {
+          .banner-content-title,p {
             text-align: center;
+          }
+          .banner-content-title {
+            font-size: 3.8rem;
           }
         }
         .home__mainImg-wrapper {
@@ -118,10 +117,12 @@
     }
   }
   .home__categoryBar {
-    padding: 1rem 0;
+    padding: .8rem 0;
+    .categoryList__btn span {
+      display: none;
+    }
   }
 }
-
 @include mobile {
   .home__banner {
     padding-top: 9rem;
@@ -137,16 +138,11 @@
             font-size: 3.2rem;
             margin-bottom: 1rem;
           }
-          .banner-content-description {
+          p {
             font-size: 2rem;
           }
         }
       }
-    }
-  }  
-  .home__categoryBar {
-    .categoryList {
-      flex-wrap: wrap;
     }
   }
 }

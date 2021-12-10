@@ -7,7 +7,7 @@ import { faBookmark, faComment, faHeart, faShareSquare, faSmile } from "@fortawe
 
 function Feed() {
   return (
-    <div className="main__feed">
+    <div id="Feed">
       <div className="feed__header">
         <img src={anonymous} alt="profileImg" className="feed__header-profileImg" />
         <div className="feed__header-profileDesc">

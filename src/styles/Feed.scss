@@ -1,157 +1,145 @@
 @import "styles/_mixin";
 
-.main__feed {
+#Feed {
   width: 100%;
   background-color: $white-color;
   border-radius: 1rem;
   margin-bottom: 2rem;
+}
 
-  .feed__header {
-    padding: 1.6rem;
-    display: flex;
-    align-items: center;
-    .feed__header-profileImg {
-      width: 4rem;
-      height: 4rem;
-      border: 2px solid $hareubang-gray;
-      border-radius: 50%;
-      background-color: $light-white-color1;
-    }
-    .feed__header-profileDesc {
-      flex: 1;
-      font-family: $main-font;
-      margin-left: 1.4rem;
-      color: $hareubang-gray;
-      h6 {
-        font-size: 1.8rem;
-        color: $deep-green-color;
-        margin-bottom: .4rem;
-      }
-      span {
-        font-size: 1.4rem;
-        color: $hareubang-gray;
-      }
-    }
-    .feed__header-moreBtn {
-      margin-right: 1.2rem;
+.feed__header {
+  padding: 1.6rem;
+  display: flex;
+  align-items: center;
+  .feed__header-profileImg {
+    width: 4rem;
+    height: 4rem;
+    border: 2px solid $hareubang-gray;
+    border-radius: 50%;
+    background-color: $light-white-color1;
+  }
+  .feed__header-profileDesc {
+    flex: 1;
+    font-family: $main-font;
+    margin-left: 1.4rem;
+    color: $hareubang-gray;
+    h6 {
       font-size: 1.8rem;
+      color: $deep-green-color;
+      margin-bottom: 0.4rem;
     }
-  }
-
-  .feed__contents {
-    background-color: $white-color;
-    width: 100%;
-    min-height: 20rem;
-    .content-image {
-      width: 100%;
-      max-height: 100rem;
-      background-color: $white-color;
-    }
-  }
-
-  .feed__post {
-    padding: 1.6rem;
-    font-family:$sub-font1;
-    font-weight: 400;
-    .post-icons {
-      display: flex;
-      align-items: center;
-      gap: 2rem;
-      margin-bottom: 1rem;
-      .post-icon {
-        font-size: 2.4rem;
-        &:hover {
-          color: $main-color;
-        }
-      }
-      .post-padding {
-        flex: 1;
-      }
-    }
-    .post-likeCount {
-      margin-bottom: .8rem;
-      font-weight: 600;
-      font-size: 1.6rem;
-      padding-bottom: .6rem;
-    }
-    .post-text {
-      margin-bottom: .8rem;
+    span {
       font-size: 1.4rem;
-      .post-categories {
-        display: flex;
-        align-items: center;
-        .post-categoryBtn {
-          background-color: $main-color;
-          padding: .8rem 1rem;
-          margin-top: .6rem;
-          border-radius: 1.6rem;
-          font-family: $main-font;
-          font-size: 1.6rem;
-          box-shadow: 0 0 1.5rem rgb(0 0 0 / 15%);
-          transition: all .2s;
-          &:hover {
-            transform: scale(1.1);
-            background-color: $light-green-color;
-          }
-        }
-      }
-    }
-    .post-comments {
-      margin-bottom: .8rem;
-      font-size: 1.4rem;
-      .comment-userName {
-        font-weight: 600;
-        margin-right: .4rem;
-      }
-    }
-    .post-timeAgo {
-      font-size: 1.2rem;
       color: $hareubang-gray;
     }
   }
+  .feed__header-moreBtn {
+    margin-right: .8rem;
+    font-size: 1.8rem;
+  }
+}
 
-  .feed__addComment {
+.feed__contents {
+  background-color: $white-color;
+  width: 100%;
+  min-height: 20rem;
+  .content-image {
+    width: 100%;
+    max-height: 100rem;
+    background-color: $white-color;
+  }
+}
+
+.feed__post {
+  padding: 1.6rem;
+  font-family: $sub-font1;
+  font-weight: 400;
+  .post-icons {
     display: flex;
     align-items: center;
-    padding: 1.2rem 1.6rem;
-    border-top: 1px solid rgba(53, 53, 53, .1);
-    .addComment-emoji {
-      font-size: 2rem;
-      margin-right: 1.6rem;
+    gap: 2rem;
+    margin-bottom: 1rem;
+    .post-icon {
+      font-size: 2.4rem;
+      &:hover {
+        color: $main-color;
+      }
     }
-    .addComment-inputForm {
+    .post-padding {
       flex: 1;
+    }
+  }
+  .post-likeCount {
+    font-weight: 600;
+    font-size: 1.6rem;
+    padding-bottom: 1.4rem;
+  }
+  .post-text {
+    margin-bottom: 0.8rem;
+    font-size: 1.4rem;
+    .post-categories {
       display: flex;
       align-items: center;
-      .addComment-input {
-        flex: 1;
-        border: none;
-        outline: none;
-        padding: .4rem;
+      padding-top: .6rem;
+      .post-categoryBtn {
+        background-color: $main-color;
+        padding: 0.8rem 1rem;
+        margin-right: 0.6rem;
+        border-radius: 1.6rem;
+        font-family: $main-font;
         font-size: 1.6rem;
-      }
-      .addComment-subBtn {
-        padding: .4rem;
-        font-size: 1.6rem;
-        font-weight: 600;
-        color: $main-color;
-        transition: all .15s;
+        box-shadow: 0 0 1.5rem rgb(0 0 0 / 15%);
+        transition: all 0.2s;
         &:hover {
-          color: $deep-green-color;
+          transform: scale(1.1);
+          background-color: $light-green-color;
         }
       }
     }
   }
+  .post-comments {
+    padding-bottom: 0.8rem;
+    font-size: 1.4rem;
+    .comment-userName {
+      font-weight: 600;
+      margin-right: 0.4rem;
+    }
+  }
+  .post-timeAgo {
+    font-size: 1.2rem;
+    color: $hareubang-gray;
+  }
 }
 
-@include desktop {
-  
-}
-
-@include tablet {
-
-}
-
-@include mobile {
-  
+.feed__addComment {
+  display: flex;
+  align-items: center;
+  padding: 1.2rem 1.6rem;
+  border-top: 1px solid rgba(53, 53, 53, 0.1);
+  .addComment-emoji {
+    font-size: 2rem;
+    margin-right: 1.6rem;
+  }
+  .addComment-inputForm {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    .addComment-input {
+      flex: 1;
+      border: none;
+      outline: none;
+      padding: 0.4rem;
+      font-size: 1.6rem;
+    }
+    .addComment-subBtn {
+      padding: 0.4rem;
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: $main-color;
+      transition: all 0.15s;
+      &:hover {
+        color: $deep-green-color;
+      }
+    }
+  }
 }

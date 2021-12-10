@@ -15,7 +15,7 @@ function SideBar() {
   const [toggleSideBar, setToggleSideBar] = useState(false);
 
   return (
-    <section id="SideBar" style={toggleSideBar ? {left: 0} : {left: '-30rem'}}>
+    <section id="SideBar" style={toggleSideBar ? {left: 0} : {left: '-26rem'}}>
       <div className="sideBar__profile">
         <img src={anonymous} alt="profileImg" className="sideBar__profileImg" />
         <div className="sideBar__profile-desc">
