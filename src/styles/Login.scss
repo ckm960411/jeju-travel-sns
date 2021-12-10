@@ -13,66 +13,92 @@
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: $light-white-color1;
-  border-radius: 20px;
-  padding: 40px 10px;
+  border-radius: 2rem;
+  padding: 4rem 1rem;
   .login__logo {
-    width: 300px;
+    width: 30rem;
   }
-  .login__mainContainer {
-    display: flex;
-    padding-top: 20px;
-    .login-img-wrapper {
-      width: 400px;
-      padding: 10px 0 20px;
-      img {
-        width: 100%;
-      }
+}
+
+.login__mainContainer {
+  display: flex;
+  padding-top: 2rem;
+  .login-img-wrapper {
+    width: 400px;
+    padding: 1rem 0 2rem;
+    img {
+      width: 100%;
     }
-    .login__form-wrapper {
+  }
+  .login__form-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40rem;
+    padding: 0 1rem;
+    h2 {
+      font-family: $main-font;
+      letter-spacing: .2rem;
+      color: $hareubang-gray;
+      font-size: 2.4rem;
+      font-weight: 600;
+    }
+    .login__form {
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
-      width: 400px;
-      padding: 0 10px;
-      h2 {
-        font-family: $main-font;
-        letter-spacing: .2rem;
-        color: $hareubang-gray;
-        font-size: 2.4rem;
-        font-weight: 600;
-      }
-      .login__form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 90%;
-        padding: 30px 0 10px;
-        input {
-          width: 100%;
-          border: 1px solid #999;
-          border-radius: 4px;
-          outline: none;
-          background-color: transparent;
-          padding: 6px 10px;
-          margin-bottom: 10px;
-          &[type="submit"] {
-            border: none;
-            background-color: $main-color;
-            color: $light-gray-color;
-            font-weight: 600;
-            cursor: pointer;
-            &:hover {
-              background-color: #73c42c;
-            }
+      width: 90%;
+      padding: 3rem 0 1rem;
+      input {
+        width: 100%;
+        border: 1px solid #999;
+        border-radius: .4rem;
+        outline: none;
+        background-color: transparent;
+        padding: .6rem 1rem;
+        margin-bottom: 1rem;
+        &[type="submit"] {
+          border: none;
+          background-color: $main-color;
+          color: $light-gray-color;
+          font-weight: 600;
+          cursor: pointer;
+          &:hover {
+            background-color: #73c42c;
           }
         }
       }
-      .login__toggleBtn {
-        color: $deep-green-color;
-        font-weight: 600;
-        text-decoration: underline;
-      }
+    }
+    .login__toggleBtn {
+      color: $deep-green-color;
+      font-weight: 600;
+      text-decoration: underline;
+    }
+  }
+}
+
+@include tablet {
+  .login__container {
+    .login__logo {
+      width: 24rem;
+    }
+  }
+  .login__mainContainer {
+    display: block;
+    .login__form-wrapper {
+      margin: 0 auto;
+      width: 100%;
+    }
+  }
+}
+@include mobile {
+  .login__container .login__logo {
+    width: 16rem;
+  }
+  .login__mainContainer {
+    .login-img-wrapper {
+      width: 300px;
     }
   }
 }
