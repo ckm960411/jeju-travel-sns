@@ -9,6 +9,9 @@
   margin-right: 1rem;
   border-radius: 1rem;
   font-family: $main-font;
+  -webkit-box-shadow: 8px 10px 26px -12px rgba(0,0,0,0.75);
+  -moz-box-shadow: 8px 10px 26px -12px rgba(0,0,0,0.75);
+  box-shadow: 8px 10px 26px -12px rgba(0,0,0,0.75);
 }
 
 .sideBar__profile {

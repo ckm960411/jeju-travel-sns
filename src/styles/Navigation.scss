@@ -4,9 +4,9 @@
   position: fixed;
   z-index: 10;
   width: 100%;
-  padding: 1.5rem 0;
+  height: $navbar_height;
   font-family: 'Baloo Bhaijaan 2', cursive;
-  border-bottom: 1px solid #e7fcd5;
+  border-bottom: 1px solid $main-color;
   background-color: $white-color;
   
   .navbar__inner {
