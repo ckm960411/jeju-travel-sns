@@ -1,14 +1,15 @@
-import { faBiking, faCampground, faCoffee, faMountain, faUtensils } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Main from "components/Main";
 import SideBar from "components/SideBar";
+import { faBiking, faCampground, faCoffee, faMountain, faUtensils } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { authService } from "fireBase";
 import subImg from "imgs/돌하르방.png";
 import mainImgJeju from "imgs/제주도2.png";
 import "styles/Home.scss";
 
-function Home() {
-  console.log(authService.currentUser)
+function Home({ userObj }) {
+  console.log(userObj)
+  // 이제부터 진짜 유저정보에 맞게 Home 컴포넌트가 렌더링되어야 함!!
 
   return (
     <div id="Home">

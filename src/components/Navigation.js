@@ -1,16 +1,18 @@
 import "styles/Navigation.scss";
 import anonymous from "imgs/profileImg.png";
 import modrak from "imgs/modrak.png"
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch, faTimes,  } from "@fortawesome/free-solid-svg-icons";
 import { faBell, faCompass } from "@fortawesome/free-regular-svg-icons";
 import { useState } from "react";
 import styled from 'styled-components'
 
+function Navigation({ onLogoutClick }) {
+  const navigate = useNavigate()
 
-function Navigation() {
   const [useSearch, setUseSearch] = useState(false)
+  const [toggleProfile, setToggleProfile] = useState(false)
 
   const Form = styled.form`
     @media screen and (min-width: 768px) {
@@ -50,9 +52,21 @@ function Navigation() {
           }}  />
           <FontAwesomeIcon icon={faCompass} className="navbar__icon moreIcon" />
           <FontAwesomeIcon icon={faBell} className="navbar__icon alertIcon" />
-          <Link to="/profile" className="profileLink">
-            <img src={anonymous} alt="profileImg" className="profileImg" />
-          </Link>
+          <div className="profileBtn">
+            <img src={anonymous} alt="profileImg" className="profileImg" onClick={() => {
+              setToggleProfile(prev => !prev)
+            }} />
+            <ul className="profileBtn-toggleMenu" style={toggleProfile ? {display: 'flex'} : {display: 'none'}}>
+              <li><Link to="/profile" className="profile-link" onClick={() => { 
+                setToggleProfile(false) 
+              }}>프로필로 이동</Link></li>
+              <li><button onClick={() => { 
+                setToggleProfile(false) 
+                onLogoutClick()
+                navigate('/')
+              }}>로그아웃</button></li>
+            </ul>
+          </div>
         </div>
 
       </div>

@@ -1,3 +1,5 @@
+import "styles/Profile.scss"
+
 function Profile() {
   return (
     <div>
