@@ -2,11 +2,14 @@ import { faBiking, faCampground, faCoffee, faMountain, faUtensils } from "@forta
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Main from "components/Main";
 import SideBar from "components/SideBar";
+import { authService } from "fireBase";
 import subImg from "imgs/돌하르방.png";
 import mainImgJeju from "imgs/제주도2.png";
 import "styles/Home.scss";
 
 function Home() {
+  console.log(authService.currentUser)
+
   return (
     <div id="Home">
       <section className="home__banner">

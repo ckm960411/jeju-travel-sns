@@ -11,7 +11,7 @@ function App() {
       {isLoggedIn ? (
         <AppRouter />
       ) : (
-        <Login />
+        <Login setIsLoggedIn={setIsLoggedIn} />
       )}
     </>
   );

@@ -1,9 +1,12 @@
+import { useState } from "react";
+import { authService, dbService } from "fireBase";
+import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from "@firebase/auth"
+import { addDoc, collection } from "firebase/firestore";
 import "styles/Login.scss";
 import modrak from "imgs/modrak.png";
 import loginImg from "imgs/modrak-login-img2.png";
-import { useState } from "react";
 
-function Login() {
+function Login({ setIsLoggedIn }) {
   const [newAccount, setNewAccount] = useState(false);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -15,8 +18,30 @@ function Login() {
     if (name === "email") setEmail(value);
     if (name === "password") setPassword(value);
   };
+
   const onSubmit = (event) => {
     event.preventDefault();
+    if (newAccount) {
+      // 계정 생성
+      createUserWithEmailAndPassword(authService, email, password)
+        .then( async () => {
+          alert('모드락에 가입하신 것을 환영합니다!😝')
+          console.log(authService.currentUser)
+          const newUserObj = { // 새로 가입된 회원정보를 firestore 'users' 컬렉션에 저장
+            userUid: authService.currentUser.uid,
+            userDisplayName: authService.currentUser.displayName,
+            userPhotoURL: authService.currentUser.photoURL,
+            userEmail: authService.currentUser.email,
+          }
+          await addDoc(collection(dbService, "users"), newUserObj)
+          setNewAccount(false)
+        })
+    } else { 
+      // 로그인
+      signInWithEmailAndPassword(authService, email, password)
+        .then(() => setIsLoggedIn(true))
+        .catch(err => console.log(err.resultMessage))
+    }
   };
 
   return (
