@@ -85,6 +85,7 @@
         border: 2px solid $hareubang-gray;
         border-radius: 50%;
         cursor: pointer;
+        vertical-align: middle;
       }
       .profileBtn-toggleMenu {
         display: flex;
@@ -93,6 +94,9 @@
         top: 100%;
         right: 0;
         width: 14rem;
+        -webkit-box-shadow: 4px 2px 25px -10px rgba(0,0,0,0.62);
+        -moz-box-shadow: 4px 2px 25px -10px rgba(0,0,0,0.62);
+        box-shadow: 4px 2px 25px -10px rgba(0,0,0,0.62);
         button, a {
           display: inline-block;
           width: 100%;
@@ -101,7 +105,9 @@
           background-color: $light-white-color1;
           transition: all .15s;
           &:hover {
-            background-color: $main-color;
+            // background-color: $main-color;
+            color: $main-color;
+            text-decoration: underline;
           }
         }
       }

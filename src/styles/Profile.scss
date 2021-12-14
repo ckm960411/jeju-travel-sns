@@ -1,0 +1,44 @@
+@import "styles/_mixin.scss";
+
+#Profile {
+  background-color: #fafafa; // $light-skyBlue-color
+  padding: 10rem 0 6rem;
+  font-size: 1.6rem;
+}
+
+.profile__header {
+  display: flex;
+  padding-bottom: 4.4rem;
+  border-bottom: 1px solid $light-gray-color;
+  .header-imgArea {
+    padding: 0 7rem;
+    height: 15rem;
+    .profile__profileImg {
+      max-width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background: $white-color;
+    }
+  }
+  .header-descriptions {
+    h1 {
+      font-size: 3.2rem;
+      padding: 1rem 0 2rem;
+    }
+    .descriptions-list {
+      display: flex;
+      padding-bottom: 2rem;
+      li {
+        margin-right: 3rem;
+        span { font-weight: 600; }
+      }
+    }
+    .header-userName {
+
+    }
+  }
+}
+
+.profile__main {
+
+}
