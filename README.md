@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+# (구)Modrak 모드락 (미완)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 메인화면, RESULT
 
-## Available Scripts
+![모드락썸네일](./src/imgs/%EB%AA%A8%EB%93%9C%EB%9D%BD1%EC%8D%B8%EB%84%A4%EC%9D%BC.png)
 
-In the project directory, you can run:
+## 📑 프로젝트 개요
 
-### `yarn start`
+제주도 여행 SNS (미완)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# 🛠 기술 스택
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- React
+- 서버 및 DB: Firebase(v9)
+- UI 및 스타일: Sass, styled-components
 
-### `yarn test`
+# 🔵 주요 기능
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. 회원가입 및 로그인
 
-### `yarn build`
+![모드락-로그인](./src/imgs/%EA%B5%AC%EB%AA%A8%EB%93%9C%EB%9D%BD-%EB%A1%9C%EA%B7%B8%EC%9D%B8.gif)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. 피드 페이지 및 프로플 페이지 UI 구현
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![모드락-메인](./src/imgs/%EB%AA%A8%EB%93%9C%EB%9D%BD-%EB%A9%94%EC%9D%B8.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# ⚠️ 프로젝트 중단 이유와 느낀점
 
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+제주도 여행 SNS 를 만들면 좋겠다는 생각을 쭉 해왔었다. 그러나 스스로의 기술적 한계를 많이 느꼈다. Sass 로 하나부터 열까지 퍼블리싱을 하면서 드는 시간적 비용이 너무 컸고 컴포넌트 구조를 짜는데 있어 너무 비체계적이라는 느낌이 나 스스로도 많이 들었다. 직접 프로젝트를 진행하면서 익힌 걸 활용하는 방향으로 공부를 해왔지만 지금까지 공부한 바로는 이 정도가 최선이라는 생각이 들었고 좀 더 공부를 해야겠다는 생각이 들었다.
+또한 이때 접하게 된 것이 styled-components 였다. 리액트에서 CSS-in-JS 로 스타일링을 할 수 있는데 Sass 로 스타일을 주는 것에 대해 많은 생각이 들었고 리액트를 좀더 공부한 뒤에 새롭게 이어가보자는 생각이 들었고, 그만 프로젝트를 중단했다.
+그러나 이후에 Next.js 와 TypeScript 로 새롭게 모드락을 완성시켰고, 이때의 (구)모드락 프로젝트를 진행한 경험과 컨셉이 많은 도움이 되었다. 일차적으로는 이 때 Sass 로 일일히 모든 것을 퍼블리싱했던 경험이 css 를 익히는데 많은 도움이 되었고, 이차적으로는 이 때 구상한 컨셉이 이후 완성한 모드락에서도 가장 중요한 컨셉이 되었다.
+때문에 이 프로젝트 자체는 미완성으로 남게 됐지만 애정이 가는 프로젝트이고, 모드락이라는 큰 줄기는 완성할 수 있었다.
